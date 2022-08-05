@@ -17,7 +17,6 @@ body{
 header{
     background-color: #191919;
     color: #fff;
-
 }
 
 .container{
@@ -32,6 +31,9 @@ header{
     align-items: center;
     border-bottom: 1px solid rgb(172, 172, 172);
     padding: 25px 0;
+    position: sticky;
+    top: -30px;
+    z-index: 100;
 }
 
 .container nav h3{
@@ -411,6 +413,9 @@ footer .container p:last-child span{
     color: rgb(124, 124, 124);
 }
 
+.product > a:hover{
+    color: #D87D48;
+}
 
 .product-info{
     height: 500px;
@@ -425,6 +430,7 @@ footer .container p:last-child span{
     height: 100%;
     background-color: #F1F1F1;
     padding: 70px 0;
+    border-radius: 10px;
 }
 
 .product-price{
@@ -632,3 +638,237 @@ footer .container p:last-child span{
     transform: scale(0.9);
 }
 
+.checkout{
+    background-color: #F1F1F1;
+}
+
+.checkout > a{
+    display: inline-block;
+    margin: 50px 0 50px 10%;
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+
+.checkout > a:hover{
+    color: #D87D48;
+}
+
+.checkout-info{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.left-side{
+    background-color: #fff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    width: 68%;
+    margin-right: 20px;
+}
+
+.left-side h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.left-side p{
+    text-transform: uppercase;
+    color: #D87D48;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.left-side > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side > div label{
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.left-side > div input{
+    padding: 13px;
+    outline: none;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.checkout-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.checkout-grid div{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-grid div label{
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.checkout-grid div input{
+    padding: 13px;
+    outline: none;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.payment > p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.payment-grid div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment-grid div:nth-child(4){
+    margin-bottom: 0;
+}
+
+.payment-grid div input{
+    margin: 0 10px 0 0;
+}
+
+.payment-grid div label{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.payment-grid div:nth-child(1) label{
+    color: #07308F;
+    font-style: italic;
+}
+
+.payment-grid div:nth-child(1) label span{
+    color: #13A3E0;
+}
+
+.payment-grid div:nth-child(2) label i{
+    color: #EA1E24;
+}
+
+.payment-grid div:nth-child(3) label{
+    color: #045e9e;
+    text-transform: uppercase;
+}
+
+.payment-grid div label i{
+    margin-right: 10px;
+}
+
+.right-side{
+    background-color: #fff;
+    padding: 25px;
+    align-self: flex-start;
+    width: 32%;
+    border-radius: 10px;
+}
+
+.right-side > h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.product-checkout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product-checkout > span{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+}
+
+.product-checkout div h3{
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.product-checkout div p{
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+}
+
+.product-checkout img{
+    width: 70px;
+    height: 70px;
+    background-color: #F1F1F1;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.price h3{
+    letter-spacing: 1px;
+}
+
+.right-side div:nth-child(7){
+    margin-bottom: 25px;
+}
+
+.right-side div:nth-child(8) h3{
+    color: #D87D48;
+}
+
+.price p{
+    color: rgb(124, 124, 124);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.right-side a:last-child{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    background-color: #D87D48;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.right-side a:last-child:hover{
+    transform: scale(0.9);
+}
