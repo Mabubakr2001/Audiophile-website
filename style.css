@@ -493,11 +493,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .buy div{
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -528,6 +528,7 @@ header{
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 500;
+    margin-left: 15px;
 }
 
 .buy a:hover{
@@ -1126,11 +1127,14 @@ footer .container p:last-child span{
     
     .buy div{
         width: 100%;
+        height: 50%;
     }
     
     .buy a{
         width: 100%;
+        height: 50%;
         margin-top: 20px;
+        margin-left: 0;
     }
 
     .product-features{
@@ -1386,7 +1390,7 @@ footer .container p:last-child span{
     .grid-2{
         width: 85%;
         margin: 0 auto;
-        height: 1100px;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
@@ -1447,8 +1451,9 @@ footer .container p:last-child span{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 100px;
         height: 400px;
+        width: 85%;
+        margin: 100px auto;
     }
     
     .flex-2 div{
@@ -1457,7 +1462,7 @@ footer .container p:last-child span{
     }
     
     .flex-2 div h3{
-        font-size: 28px;
+        font-size: 30px;
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 15px;
@@ -1469,8 +1474,8 @@ footer .container p:last-child span{
     
     .flex-2 div p{
         color: rgb(128, 128, 128);
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 20px;
     }
     
     .flex-2 img{
