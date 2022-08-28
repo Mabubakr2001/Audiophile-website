@@ -176,7 +176,7 @@ header{
 }
 
 .drop-down--view{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -954,6 +954,10 @@ footer .container p:last-child span{
         display: none;
     }
 
+    .drop-down--view{
+        display: flex;
+    }
+
     .flex-1{
         text-align: center;
         background-image: url("photos/headphones.png");
@@ -1339,6 +1343,10 @@ footer .container p:last-child span{
 
     .container nav ul{
         display: none;
+    }
+
+    .drop-down--view{
+        display: flex;
     }
 
     .flex-1{
